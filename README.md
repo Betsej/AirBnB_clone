@@ -20,3 +20,45 @@ Create a new object (ex: a new User or a new Place)
 	- Do operations on objects (count, compute stats, etc…)
 	- Update attributes of an object
 	- Destroy an object
+
+## Execution
+Your shell should work like this in interactive mode:
+```
+$ ./console.py
+(hbnb) help
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+
+(hbnb) 
+(hbnb) 
+(hbnb) quit
+$
+```
+
+But also in non-interactive mode: (like the Shell project in C)
+```
+$ echo "help" | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+$ cat test_help
+help
+$
+$ cat test_help | ./console.py
+(hbnb)
+
+Documented commands (type help <topic>):
+========================================
+EOF  help  quit
+(hbnb) 
+$
+```
+
+All tests should also pass in non-interactive mode: `$ echo "python3 -m unittest discover tests" | bash`
+![flowchart](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230311%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230311T174248Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=30311532c80d3cec9521ce810b8c9cfff18d3d7c1fc2337cf4dcc05edbadc141)
